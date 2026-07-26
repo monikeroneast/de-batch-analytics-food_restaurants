@@ -130,6 +130,8 @@ Core Business Metrics Surfaced:
 Average Cost For Two (Pricing tier analysis)
 Average Customer Rating (Cuisine performance indicator)
 Total Votes (Customer engagement and popularity tracking)
+* **[NotionLink]:** (https://bevel-chestnut-da0.notion.site/Zomato-Modern-Data-Stack-Data-Platform-37793f2c74c080d1b632f444db74d955?pvs=25)
+
 
 
 ## About Me
