@@ -4,7 +4,7 @@
 
 ---
 
-An enterprise-grade analytical data pipeline engineered to ingest semi-structured JSON restaurant source data from AWS S3 into Snowflake, model scalable dimensional marts using dbt Core, and infer dynamic business intelligence insights via Tableau.
+An analytical data pipeline engineered to ingest semi-structured JSON restaurant source data from AWS S3 into Snowflake, model scalable dimensional marts using dbt Core, and infer dynamic business intelligence insights via Tableau.
 
 Project Objective:
 
@@ -43,7 +43,7 @@ Building upon foundational data engineering patterns and leveraging concepts fro
     LIST @zomato_db.raw.s3_stage;
     ```
 
-    ![Snowflake Stage S3 File Inventory](assets/zomato_db-raw-s3_stage.png)
+    ![Snowflake Stage S3 File Inventory](artefacts/zomato_db-raw-s3_stage.png)
 
     ### Semi-Structured Data Ingestion (`VARIANT`)
     Raw payloads landing from the S3 data lake are loaded directly into target staging tables using Snowflake's native `VARIANT` data type. This isolates ingestion from schema drift and preserves the full JSON structure for downstream transformations:
@@ -52,7 +52,7 @@ Building upon foundational data engineering patterns and leveraging concepts fro
     SELECT * FROM staging_orders LIMIT 17;
     ```
 
-    ![Snowflake Raw Variant Ingestion Preview](assets/zomato_db-snowflake-staging_view.png)
+    ![Snowflake Raw Variant Ingestion Preview](artefacts/zomato_db-snowflake-staging_view.png)
 
     ### Semi-Structured Data Parsing (`LATERAL FLATTEN`)
     To prepare the nested data layers for analytical modeling, a relational view is built by leveraging Snowflake’s native JSON path dot-notation and relational flattening mechanisms to unnest the restaurant payload arrays into strongly typed fields:
@@ -66,7 +66,7 @@ Building upon foundational data engineering patterns and leveraging concepts fro
     LATERAL FLATTEN(input => raw_json:restaurants) f;
     ```
 
-    ![Snowflake JSON Lateral Flattening Validation](assets/zomato_db-snowflake-flattened_view.png)
+    ![Snowflake JSON Lateral Flattening Validation](artefacts/zomato_db-snowflake-flattened_view.png)
 
 
 3. Modeling: Structural formatting applied via Snowflake staging views
@@ -99,7 +99,7 @@ Building upon foundational data engineering patterns and leveraging concepts fro
 
 ```text
 zomato-modern-data-stack/
-├── assets/                       # Sanitized execution & pipeline screenshots
+├── artefacts/                    # Sanitized execution & pipeline screenshots
 ├── dags/                         # Apache Airflow orchestration scripts
 ├── dashboards/                   # Tableau workbook packages (.twbx) and extracts
 ├── models/                       # dbt analytical transformation layer
@@ -107,6 +107,7 @@ zomato-modern-data-stack/
 │   └── marts/                    # Dimension and Fact core metric tables
 ├── snowflake/                    # Production cloud warehouse DDL setup scripts
 ├── snapshots/                    # dbt slowly changing dimensions (SCD Type 2)
+└── src/data_ingestion/                    
 └── tests/                        # Custom data quality assurance checks
 ```
 
