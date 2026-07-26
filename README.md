@@ -115,7 +115,7 @@ zomato-modern-data-stack/
    
 Analytics and Business Intelligence (BI) Layer:
 The presentation layer consists of a Zomato Global Analytics dashboard powered by data extracts from Dimension and Fact tables. It focuses on Global Culinary trends.
-![Dashboard Preview](https://github.com/monikeroneast/de-batch-analytics-food_restaurants/blob/main/dashboards/Zomato_Global%20_Analytics_Intelligence_Modern_Data_Stack.png)
+![Dashboard Preview](dashboards/Zomato_Global%20_Analytics_Intelligence_Modern_Data_Stack.png)
 
 
 Key Visualizations & Features:
