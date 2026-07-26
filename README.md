@@ -133,14 +133,11 @@ Total Votes (Customer engagement and popularity tracking)
 
 
 ## About Me
-Business and Product Analyst with 8+ years of domain experience across enterprise systems and automotive ecosystems, now specializing in the Modern Data Stack platform.
+Data Engineer and Analytics Engineer with 8+ years of experience spanning enterprise data architecture, cloud data platforms, and business intelligence, with a background in software applications, digital backend platforms, and connected vehicle ecosystems. Expert at defining data contracts and translating complex business requirements into production-ready data pipelines. Combines hands-on proficiency in Snowflake, BigQuery, Kafka, Spark and dbt with strong stakeholder and cross-functional delivery experience to deliver scalable, cost-optimized data assets.
 
-Experienced across enterprise operations, systems, and cross-functional execution (Ex-Tata Motors). I specialize in translating complex business problems into scalable, data-driven systems by working closely with engineering and analytics teams.
+Experienced across enterprise operations, systems, and cross-functional execution (Ex-Tata Motors), specializing in translating complex business problems into scalable, data-driven systems by working closely with engineering and analytics teams.
 
-Currently focused on Product Analytics, Business Analytics, BI, and data-driven product roles, with a strong interest in scalable systems and enterprise platforms. I strive to bridge the gap between data engineering and executive decision-making by building version-controlled pipelines that transform raw operational data into production-ready analytical views.
+Currently based in India and open to Data Engineering and Analytics Engineering roles where I can bring both technical depth and stakeholder fluency from my product background. Happy to connect!
 
-Currently based in India and actively seeking Business Analyst, Product Analyst, and Data/Analytics Engineer opportunities where I can put my skills to solve business problems. Happy to connect!
-
-**[Notion Link]:** (https://bevel-chestnut-da0.notion.site/Jai-Lalita-Soren-Product-Portfolio-32c93f2c74c080a6b4bae9fc24c8b730)
-
+**[Notion Link]:** (https://bevel-chestnut-da0.notion.site/Jai-Lalita-Soren-Data-Engineering-Portfolio-32c93f2c74c080a6b4bae9fc24c8b730)
 
